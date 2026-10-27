@@ -5,7 +5,7 @@ $project = Join-Path $root 'src\ConfigurableStageCredit\ConfigurableStageCredit.
 $buildOutput = Join-Path $root 'src\ConfigurableStageCredit\bin\Release\netstandard2.1\ConfigurableStageCredit.dll'
 $artifactDir = Join-Path $root 'artifacts\thunderstore'
 $packageDir = Join-Path $artifactDir 'ConfigurableStageCredit'
-$zipPath = Join-Path $artifactDir 'ConfigurableStageCredit-0.3.3.zip'
+$zipPath = Join-Path $artifactDir 'ConfigurableStageCredit-0.3.4.zip'
 
 if (-not (Test-Path (Join-Path $root 'Config.Build.user.props'))) {
     throw 'Missing Config.Build.user.props. Copy Config.Build.user.props.template to Config.Build.user.props and set your local game/profile paths first.'
