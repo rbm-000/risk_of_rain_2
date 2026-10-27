@@ -1,0 +1,8 @@
+<Project>
+  <Import Project="$(MSBuildThisFileDirectory)Config.Build.user.props" Condition="Exists('$(MSBuildThisFileDirectory)Config.Build.user.props')" />
+  <PropertyGroup>
+    <RoR2Dir Condition="'$(RoR2Dir)' == ''">D:\Program Files (x86)\Steam\steamapps\common\Risk of Rain 2</RoR2Dir>
+    <GameManagedDir Condition="'$(GameManagedDir)' == ''">$(RoR2Dir)\Risk of Rain 2_Data\Managed</GameManagedDir>
+    <BepInExCoreDir Condition="'$(BepInExCoreDir)' == ''">$(RoR2Dir)\BepInEx\core</BepInExCoreDir>
+  </PropertyGroup>
+</Project>

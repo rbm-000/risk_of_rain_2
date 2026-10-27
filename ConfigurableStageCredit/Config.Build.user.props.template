@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <!-- Set this to the folder that contains Risk of Rain 2.exe. -->
+    <RoR2Dir>D:\Program Files (x86)\Steam\steamapps\common\Risk of Rain 2</RoR2Dir>
+
+    <!--
+      For a manual BepInEx install, this is usually $(RoR2Dir)\BepInEx\core.
+      For r2modman, set this to your profile's BepInEx\core folder, e.g.
+      C:\Users\YOUR_USER\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\YOUR_PROFILE\BepInEx\core
+    -->
+    <BepInExCoreDir>C:\Users\YOUR_USER\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\YOUR_PROFILE\BepInEx\core</BepInExCoreDir>
+  </PropertyGroup>
+</Project>

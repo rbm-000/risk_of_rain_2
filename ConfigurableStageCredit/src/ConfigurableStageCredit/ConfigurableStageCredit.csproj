@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>ConfigurableStageCredit</AssemblyName>
+    <RootNamespace>ConfigurableStageCredit</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Version>0.3.3</Version>
+    <Description>Configure per-stage multipliers for Risk of Rain 2 enemy and interactable spawn credits.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExCoreDir)\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="RoR2">
+      <HintPath>$(GameManagedDir)\RoR2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameManagedDir)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
+      <HintPath>$(GameManagedDir)\com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CheckRoR2References" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(GameManagedDir)\RoR2.dll')"
+           Text="Cannot find RoR2.dll. Set RoR2Dir in Config.Build.user.props to your Risk of Rain 2 game folder." />
+    <Error Condition="!Exists('$(BepInExCoreDir)\BepInEx.dll')"
+           Text="Cannot find BepInEx.dll. Set BepInExCoreDir in Config.Build.user.props to the BepInEx\core folder for your modded profile." />
+  </Target>
+</Project>
