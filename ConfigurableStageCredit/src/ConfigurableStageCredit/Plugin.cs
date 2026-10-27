@@ -18,7 +18,7 @@ namespace ConfigurableStageCredit
     {
         public const string PluginGuid = "com.configurablestagecredit.plugin";
         public const string PluginName = "ConfigurableStageCredit";
-        public const string PluginVersion = "0.3.3";
+        public const string PluginVersion = "0.3.4";
 
         internal static ManualLogSource ModLog;
 

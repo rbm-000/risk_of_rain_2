@@ -7,7 +7,7 @@
     <Nullable>disable</Nullable>
     <ImplicitUsings>disable</ImplicitUsings>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-    <Version>0.3.3</Version>
+    <Version>0.3.4</Version>
     <Description>Configure per-stage multipliers for Risk of Rain 2 enemy and interactable spawn credits.</Description>
   </PropertyGroup>
 
