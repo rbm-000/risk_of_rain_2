@@ -1,8 +1,8 @@
 {
   "name": "ConfigurableStageCredit",
-  "version_number": "0.3.3",
+  "version_number": "0.3.4",
   "website_url": "",
-  "description": "Configure separate stage-based multipliers for enemy-spawn and loot/interactable spawn credits.",
+  "description": "Configure separate stage-based multipliers for enemy and interactable credits.",
   "dependencies": [
     "bbepis-BepInExPack-5.4.2122"
   ]
